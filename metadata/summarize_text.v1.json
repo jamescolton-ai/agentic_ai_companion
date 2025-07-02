@@ -1,0 +1,21 @@
+{
+  "name": "summarize_text.v1",
+  "description": "Summarize text by truncating to 120 chars.",
+  "arguments": {
+    "text": {
+      "type": "string",
+      "description": "Text to summarize"
+    }
+  },
+  "output": {
+    "type": "object",
+    "properties": {
+      "summary": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "summary"
+    ]
+  }
+}

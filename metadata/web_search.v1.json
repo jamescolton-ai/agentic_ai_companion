@@ -1,0 +1,24 @@
+{
+  "name": "web_search.v1",
+  "description": "DuckDuckGo top 3 result titles.",
+  "arguments": {
+    "query": {
+      "type": "string",
+      "description": "Search query"
+    }
+  },
+  "output": {
+    "type": "object",
+    "properties": {
+      "results": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "required": [
+      "results"
+    ]
+  }
+}
