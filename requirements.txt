@@ -9,3 +9,7 @@ duckduckgo-search
 requests
 pytest
 beautifulsoup4
+chromadb==0.4.24
+langchain-community
+pypdf
+tqdm

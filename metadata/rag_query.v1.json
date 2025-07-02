@@ -1,0 +1,22 @@
+{
+    "name": "rag_query.v1",
+    "description": "Semantic search over uploaded PDFs (Chroma / FakeEmbeddings).",
+    "arguments": {
+      "query": {
+        "type": "string",
+        "description": "Natural-language question or keywords"
+      }
+    },
+    "output": {
+      "type": "object",
+      "properties": {
+        "answer": { "type": "string" },
+        "sources": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "required": ["answer"]
+    }
+  }
+  
